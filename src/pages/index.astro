@@ -3,32 +3,41 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Algo from "../components/Algo";
+import Title3D from "../components/Title3D";
 ---
 
 <Layout title="Home">
   <main>
     <Header />
-    <section class="w-screen h-fit flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 to-blue-400 py-28 gap-5">
-      <h1 class="text-7xl font-bold">Simulador de Neonatos en Realidad Virtual</h1>
+
+    <section
+      class="w-screen h-fit flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 to-blue-400 py-28 gap-5"
+    >
+      <h1 class="text-7xl font-bold">
+        Simulador de Neonatos en Realidad Virtual
+      </h1>
+      <div class="h-80 w-full bg bg-red-300 flex justify-start items-start">
+        <Title3D client:load />
+      </div>
       <p>
         Entrena en un entorno seguro y realista. Perfecciona tus habilidades en
         el cuidado neonatal con nuestra avanzada tecnología VR.
       </p>
-      <div class="flex flex-row items-end justify-center  gap-4">
+      <div class="flex flex-row items-end justify-center gap-4">
         <button>Solicitar demo</button>
-        <div class="flex flex-col items-center gap-2" >
-          <p class=" text-sm font-extralight">¿Tienes una cuentas?</p>
+        <div class="flex flex-col items-center gap-2">
+          <p class="text-sm font-extralight">¿Tienes una cuentas?</p>
           <button>Iniciar sesión</button>
         </div>
       </div>
     </section>
-	<section>
-		<h1>Caracteristicas</h1>
-		<div class="flex flex-row justify-around gap-10">
-			<Card title="hola" body="dasdasd" href="/"></Card>
-			<Card title="hola" body="dasdasd" href="/"></Card>
-			<Card title="hola" body="dasdasd" href="/"></Card>
-		</div>
-	</section>
+    <section>
+      <h1>Caracteristicas Principales</h1>
+      <div class="flex flex-row justify-around gap-10">
+        <Card title="hola" body="dasdasd" href="/" />
+        <Card title="hola" body="dasdasd" href="/" />
+        <Card title="hola" body="dasdasd" href="/" />
+      </div>
+    </section>
   </main>
 </Layout>
