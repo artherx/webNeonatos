@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import Spline from "@splinetool/react-spline/next";
 
 export default function Algo() {
   const textoMovibleRef = useRef(null); // Usamos ref en lugar de getElementById
@@ -8,9 +7,8 @@ export default function Algo() {
     const textoMovible = textoMovibleRef.current;
 
     const handleMouseMove = (event) => {
-      textoMovible.style.position = "absolute";
-      textoMovible.style.left = `${event.clientX}px`; // Usamos left y top para evitar issues con translate
-      textoMovible.style.top = `${event.clientY}px`;
+      textoMovible.style.left = `calc(18% - ${event.clientX * 0.03}px)`; // Usamos left y top para evitar issues con translate
+      textoMovible.style.top = `calc(10% - ${event.clientY * 0.01}px)`;
     };
 
     document.addEventListener("mousemove", handleMouseMove);
@@ -22,9 +20,8 @@ export default function Algo() {
   }, []);
 
   return (
-    <div ref={textoMovibleRef} style={{ position: "absolute" }}>
-      Este texto seguirá al mouse
-      
+    <div class="text-6xl font-bold" ref={textoMovibleRef} style={{ position: "absolute" }}>
+      Simulador de Neonatos en Realidad Virtual
     </div>
   );
 }
