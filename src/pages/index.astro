@@ -3,35 +3,54 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Algo from "../components/Algo";
+import Fondo from "../components/Fondo";
 ---
 
 <Layout title="Home">
   <main>
     <Header />
+    <div>
+      <section
+      class="w-screen h-fit flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 to-blue-400 py-28 gap-5 z-0 "
+      >
+        <Algo client:load />
 
-    <section
-      class="w-screen h-fit flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 to-blue-400 py-28 gap-5"
-    >
-      <Algo client:load/>
-      
-      <p>
-        Entrena en un entorno seguro y realista. Perfecciona tus habilidades en
-        el cuidado neonatal con nuestra avanzada tecnología VR.
-      </p>
-      <div class="flex flex-row items-end justify-center gap-4">
-        <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-300 hover:text-black  transition">Solicitar demo</button>
-        <div class="flex flex-col items-center gap-2">
-          <p class="text-sm font-extralight">¿Tienes una cuentas?</p>
-          <button class="bg-white text-black px-4 py-2 rounded-md hover:bg-slate-400 hover:text-white transition">Iniciar sesión</button>
+        <p>
+          Entrena en un entorno seguro y realista. Perfecciona tus habilidades
+          en el cuidado neonatal con nuestra avanzada tecnología VR.
+        </p>
+        <div class="flex flex-row items-end justify-center gap-4">
+          <button
+            class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-300 hover:text-black transition z-10"
+            >Solicitar demo</button
+          >
+          <div class="flex flex-col items-center gap-2 z-10">
+            <p class="text-sm font-extralight">¿Tienes una cuentas?</p>
+            <button
+              class="bg-white text-black px-4 py-2 rounded-md hover:bg-slate-400 hover:text-white transition"
+              >Iniciar sesión</button
+            >
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="flex flex-col items-center justify-center gap-10 py-10 px-20">
-      <h1 class="text-6xl">Caracteristicas Principales</h1>
+      </section>
+    </div>
+    <section
+      class="flex flex-col items-center justify-center gap-10 py-10 px-20 z-10"
+    >
+      <h1 class="text-6xl z-10 text-blue-600">Caracteristicas Principales</h1>
       <div class="flex flex-row justify-around gap-10">
-        <Card title="Inmersión Total" body="Experimenta un entorno de UCIN completamente inmersivo y realista." />
-        <Card title="Escenarios Realistas" body="Enfrenta casos clínicos variados y desafiantes en tiempo real." />
-        <Card title="Aprendizaje Adaptativo" body="Sistema de IA que se adapta a tu nivel de habilidad y progreso."  />
+        <Card
+          title="Inmersión Total"
+          body="Experimenta un entorno de UCIN completamente inmersivo y realista."
+        />
+        <Card
+          title="Escenarios Realistas"
+          body="Enfrenta casos clínicos variados y desafiantes en tiempo real."
+        />
+        <Card
+          title="Aprendizaje Adaptativo"
+          body="Sistema de IA que se adapta a tu nivel de habilidad y progreso."
+        />
       </div>
     </section>
   </main>
