@@ -11,7 +11,7 @@ import Fondo from "../components/Fondo";
     <Header />
     <div>
       <section
-      class="w-screen h-fit flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 to-blue-400 py-28 gap-5 z-0 "
+        class="w-screen h-fit flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 to-blue-400 py-28 gap-5 z-0"
       >
         <Algo client:load />
 
@@ -26,9 +26,10 @@ import Fondo from "../components/Fondo";
           >
           <div class="flex flex-col items-center gap-2 z-10">
             <p class="text-sm font-extralight">¿Tienes una cuentas?</p>
-            <button
+            <a
+              href="/login"
               class="bg-white text-black px-4 py-2 rounded-md hover:bg-slate-400 hover:text-white transition"
-              >Iniciar sesión</button
+              >Iniciar sesión</a
             >
           </div>
         </div>

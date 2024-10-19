@@ -1,0 +1,45 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<footer class="w-screen min-h-20 bg-blue-200 flex justify-between items-center p-10">
+    <!-- Logo o nombre del proyecto -->
+    <div class="text-left">
+        <Icon name="baby" width={50} height={50} class="text-white" />
+        <p class="text-sm text-black">Sistemas Inmersivos Multimedia</p>
+    </div>
+    
+    <!-- Links útiles -->
+    <div class="flex space-x-4">
+        <p class="text-sm text-black hover:underline">About Us</p>
+        <p class="text-sm text-black hover:underline">Privacy Policy</p>
+        <p class="text-sm text-black hover:underline">Terms & Conditions</p>
+        <p class="text-sm text-black hover:underline">Contact</p>
+    </div>
+    
+    <!-- Redes sociales -->
+    <div class="flex space-x-4">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="text-black hover:text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99h-2.54v-2.88h2.54v-2.2c0-2.5 1.52-3.88 3.74-3.88 1.06 0 2.1.18 2.1.18v2.34h-1.18c-1.16 0-1.52.72-1.52 1.45v1.7h2.68l-.43 2.88h-2.25v6.99C18.34 21.13 22 17 22 12z"/>
+            </svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="text-black hover:text-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.46 6c-.77.35-1.6.59-2.46.7a4.32 4.32 0 001.88-2.37 8.69 8.69 0 01-2.74 1.04 4.29 4.29 0 00-7.32 3.92A12.15 12.15 0 013 5.11a4.29 4.29 0 001.33 5.72 4.23 4.23 0 01-1.94-.54v.05a4.29 4.29 0 003.44 4.2 4.36 4.36 0 01-1.92.07 4.29 4.29 0 004 2.97 8.6 8.6 0 01-5.33 1.84A8.9 8.9 0 012 18.64a12.14 12.14 0 006.56 1.92c7.87 0 12.18-6.52 12.18-12.17 0-.18 0-.36-.01-.53A8.72 8.72 0 0024 5.58c-.86.38-1.78.63-2.72.74a4.29 4.29 0 001.88-2.37z"/>
+            </svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="text-black hover:text-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M7 2C4.79 2 3 3.79 3 6v12c0 2.21 1.79 4 4 4h10c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4H7zm10 2h2a2 2 0 012 2v12a2 2 0 01-2 2h-2V4zm-7 0h4v4h-4V4zm0 6h4v10h-4V10zm-7 0h2v10H5V10z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Derechos reservados -->
+    <div class="text-right">
+        <p class="text-sm text-black">
+            SIM © 2024 | All Rights Reserved
+        </p>
+    </div>
+</footer>

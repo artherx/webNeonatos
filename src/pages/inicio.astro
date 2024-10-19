@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Header_Doc from "../components/Header_Doc.astro";
+---
+<Layout title="MIS Home">
+    <main class="w-screen h-screen flex flex-col items-center gap-5">
+        <Header_Doc/>
+        <section>
+            <a
+              href="/inicio1"
+              class="bg-white text-black px-4 py-2 rounded-md hover:bg-slate-400 hover:text-white transition"
+              >Cargar</a
+            >
+        </section>
+    </main>
+    <Footer/>
+</Layout>

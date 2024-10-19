@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Iniciar Sesión">
+  <main class="w-full h-screen flex flex-col justify-center items-center">
+    <section
+      class="bg-blue-200 gap-3 p-10 rounded-md flex flex-col items-center justify-center"
+    >
+      <section class="flex gap-2">
+        <div class="flex flex-col gap-2">
+          <p>Correo</p>
+          <p>Contraseña</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <input />
+          <input />
+        </div>
+      </section>
+      <a
+        href="/inicio"
+        class="bg-white text-black px-4 py-2 rounded-md hover:bg-slate-400 hover:text-white transition"
+        >Aceptar</a
+      >
+    </section>
+  </main>
+</Layout>
+
+
