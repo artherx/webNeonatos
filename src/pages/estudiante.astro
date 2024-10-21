@@ -1,0 +1,36 @@
+---
+import Footer from "../components/Footer.astro";
+import HeaderDoc from "../components/Header_Doc.astro";
+import Layout from "../layouts/Layout.astro";
+import StatSphere from "../components/Nota.jsx";
+import InputForm from "../components/InputForm.jsx";
+---
+
+<Layout title="MIS Home">
+  <main class="w-screen h-screen flex flex-col items-center">
+    <HeaderDoc />
+    <div class="w-full px-20 gap-5 py-2">
+      <video controls class="w-full max-h-72 rounded-lg">
+        <source src="/vid/neo.mp4" type="video/mp4" />
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+      <div class="flex items-center py-2 justify-evenly">
+        <div class="grid-cols-2 grid">
+          <StatSphere
+            score={70}
+            note={"Precisión en las acciones: "}
+            client:load
+          />
+          <StatSphere score={55} note={"Tiempo de reacción: "} client:load />
+          <StatSphere
+            score={90}
+            note={"Capacidad de adaptación: "}
+            client:load
+          />
+        </div>
+        <InputForm client:load />
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
